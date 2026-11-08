@@ -81,7 +81,7 @@ int main() {
         cout << fixed << setprecision(4);
 
         if (veiksmas == 1) {
-            cout << "Kursas: 1 EUR = " << kursasBendras << " " << valiuta << endl;
+            cout << "Kursas: 1 EUR = " << KursBend << " " << valiuta << endl;
         }
 
         if (veiksmas == 2) {
