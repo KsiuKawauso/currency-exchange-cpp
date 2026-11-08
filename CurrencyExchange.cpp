@@ -36,3 +36,18 @@ int main() {
             cout << "Programa baigta.\n";
             break;
         }
+
+        int pasirinkimas;
+        string valiuta;
+        double KursBend = 0;
+        double KursPirk = 0;
+        double KursPard = 0;
+
+        cout << "\nPasirinkite valiuta (1-3):\n";
+        cout << "1. GBP\n";
+        cout << "2. USD\n";
+        cout << "3. INR\n";
+        cout << "Jusu pasirinkimas: ";
+        cin >> pasirinkimas;
+    }
+}
