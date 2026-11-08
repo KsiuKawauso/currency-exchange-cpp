@@ -83,5 +83,23 @@ int main() {
         if (veiksmas == 1) {
             cout << "Kursas: 1 EUR = " << kursasBendras << " " << valiuta << endl;
         }
+
+        if (veiksmas == 2) {
+            double SumEUR;
+
+            cout << "Iveskite suma eurais: ";
+            cin >> SumEUR;
+
+            if (SumEUR <= 0) {
+                cout << "Klaida! Suma turi buti didesne uz 0.\n";
+                continue;
+            }
+
+            double GautSum = SumEUR * KursPirk;
+
+            cout << "Pradine suma: " << SumEUR << " EUR\n";
+            cout << "Pasirinkta valiuta: " << valiuta << endl;
+            cout << "Gauta suma: " << GautSum << " " << valiuta << endl;
+        }
     }
 }
