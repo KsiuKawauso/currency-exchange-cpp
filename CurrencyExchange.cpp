@@ -84,7 +84,7 @@ int main() {
             cout << "Kursas: 1 EUR = " << KursBend << " " << valiuta << endl;
         }
 
-        if (veiksmas == 2) {
+        else if (veiksmas == 2) {
             double SumEUR;
 
             cout << "Iveskite suma eurais: ";
