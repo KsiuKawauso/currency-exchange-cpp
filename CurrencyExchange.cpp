@@ -49,5 +49,40 @@ int main() {
         cout << "3. INR\n";
         cout << "Jusu pasirinkimas: ";
         cin >> pasirinkimas;
+
+        switch (pasirinkimas) {
+            case 1:
+                valiuta = "GBP";
+                KursBend = GBP_Bend;
+                KursPirk = GBP_Pirk;
+                KursPard = GBP_Pard;
+                break;
+
+            case 2:
+                valiuta = "USD";
+                KursBend = USD_Bend;
+                KursPirk = USD_Pirk;
+                KursPard = USD_Pard;
+                break;
+
+            case 3:
+                valiuta = "INR";
+                KursBend = INR_Bend;
+                KursPirk = INR_Pirk;
+                KursPard = INR_Pard;
+                break;
+
+            default:
+                cout << "Klaida! Pasirinkite 1, 2 arba 3.\n";
+                continue;
+
+        }
+
+        cout << fixed << setprecision(2);
+
+        if (veiksmas == 1) {
+            cout << "Kursas: 1 EUR = "
+                 << kursasBendras << " " << valiuta << endl;
+        }
     }
 }
