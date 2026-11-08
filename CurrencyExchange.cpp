@@ -78,7 +78,7 @@ int main() {
 
         }
 
-        cout << fixed << setprecision(2);
+        cout << fixed << setprecision(4);
 
         if (veiksmas == 1) {
             cout << "Kursas: 1 EUR = " << kursasBendras << " " << valiuta << endl;
