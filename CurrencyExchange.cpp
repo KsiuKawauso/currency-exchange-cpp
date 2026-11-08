@@ -101,5 +101,24 @@ int main() {
             cout << "Pasirinkta valiuta: " << valiuta << endl;
             cout << "Gauta suma: " << GautSum << " " << valiuta << endl;
         }
-    }
+
+        else if (veiksmas == 3) {
+            double SumVal;
+
+            cout << "Iveskite parduodama suma (" << valiuta << "): ";
+            cin >> SumVal;
+
+            if (SumVal <= 0) {
+                cout << "Klaida! Suma turi buti didesne uz 0.\n";
+                continue;
+            }
+
+            double GautSum = SumVal / KursPard;
+
+            cout << "Pradine suma: " << SumVal << " " << valiuta << endl;
+            cout << "Gauta suma: " << GautSum << " EUR\n";
+        }
+    } while (true);
+
+    return 0;
 }
